@@ -1,8 +1,8 @@
 class Nushell < Formula
   desc "Modern shell for the GitHub era"
   homepage "https://www.nushell.sh"
-  url "https://github.com/nushell/nushell/archive/0.2.0.tar.gz"
-  sha256 "5bce8cdb33a6580ff15214322bc66945c0b4d93375056865ad30e0415fece3de"
+  url "https://github.com/nushell/nushell/archive/0.4.0.tar.gz"
+  sha256 "7111d3067db3dabc6137e8a441670de0fae63deae522d1675fc77402948f2c67"
   revision 1
   head "https://github.com/nushell/nushell.git"
 
@@ -19,8 +19,8 @@ class Nushell < Formula
   # Nu requires features from Rust 1.39 to build, so we can't use Homebrew's
   # Rust; picking a known-good Rust nightly release to use instead.
   resource "rust-nightly" do
-    url "https://static.rust-lang.org/dist/2019-08-24/rust-nightly-x86_64-apple-darwin.tar.xz"
-    sha256 "104ddea51b758f4962960097e9e0f3cabf2c671ec3148bc745344431bb93605d"
+    url "https://static.rust-lang.org/dist/2019-09-25/rust-beta-x86_64-apple-darwin.tar.xz"
+    sha256 "11feba2542e079b2deacf6edf6a9e62b34ad6e0f509dd11e11db3a66d16565c7"
   end
 
   def install
